@@ -9,29 +9,40 @@
 <body>
 
     <main>
-       <h1>MSCODE • Aula 02</h1>
+        <h1>MSCODE • Aula 02</h1>
+
         <?php
-        const NOME EMPRESA = 'PIZARIA';
-        SvalorPizza =90.00;
-        SvalorRefrir = 15.00;
-        stotalAmigos = 4;
-        StotalFatias = 10;
-        //Calculo gorjeta e divisão da conta
-        $contaTotal = ($valorPizza + $valorRefrir) * 1.10;
-        SvalorPorAmigo = $contaTotal / $totalAmigos;
-        SatiasPorAmigo = stotalFatias / StotalAmigos;
-        SatiasQueSobraram = Stotalfatias % StotalAmigos;
+        // Constante
+        const NOME_EMPRESA = 'PIZZARIA';
 
-        echo "<h2>" . NOME_EMPRESA. "</h2>";
+        // Variáveis
+        $valorPizza = 90.00;
+        $valorRefrigerante = 15.00;
+        $totalAmigos = 4;
+        $totalFatias = 10;
 
-        echo 0 valor total da conta é: R$ $contaTotal <br›";
+        $contaTotal = ($valorPizza + $valorRefrigerante) * 1.10;
 
-        echo "0 valor que cada amigo deve pagar é: R$ $valorPorAmigo
-        ‹br>";
+        
+        $valorPorAmigo = $contaTotal / $totalAmigos;
 
-        ‹br>";
-        echo "Cada amigo vai comer sfatiasPorAmigo fatias de pizza
-        echo <brs":
+      
+        $fatiasPorAmigo = intdiv($totalFatias, $totalAmigos);
+
+      
+        $fatiasQueSobraram = $totalFatias % $totalAmigos;
+
+        
+        echo "<h2>" . NOME_EMPRESA . "</h2>";
+
+        echo "O valor total da conta é: R$ " . number_format($contaTotal, 2, ',', '.') . "<br>";
+
+        echo "O valor que cada amigo deve pagar é: R$ " . number_format($valorPorAmigo, 2, ',', '.') . "<br>";
+
+        echo "Cada amigo vai comer $fatiasPorAmigo fatias de pizza.<br>";
+
+        echo "Sobraram $fatiasQueSobraram fatias de pizza.";
+        ?>
     </main>
 </body>
 </html>
