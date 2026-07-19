@@ -22,14 +22,8 @@
         $totalFatias = 10;
 
         $contaTotal = ($valorPizza + $valorRefrigerante) * 1.10;
-
-        
         $valorPorAmigo = $contaTotal / $totalAmigos;
-
-      
         $fatiasPorAmigo = intdiv($totalFatias, $totalAmigos);
-
-      
         $fatiasQueSobraram = $totalFatias % $totalAmigos;
 
         
