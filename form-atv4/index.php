@@ -36,7 +36,7 @@
         ?>
 
         <br>
-        <a href="formulario.html">← form</a>
+        <a href="formulario.html">form</a>
     </main>
 
 </body>
