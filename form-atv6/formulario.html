@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-PHP - Gestão de Influenciadores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>MSCODE - Cálculo de Campanha</h1>
+
+        <form action="index.php" method="GET">
+            <label for="receita">Receita Total do Vídeo (R$):</label>
+            <input type="number" step="0.01" name="receita" id="receita" value="10000" placeholder="Ex: 10000" required min="0">
+
+            <label for="taxa">Taxa da Agência (%):</label>
+            <input type="number" step="1" name="taxa" id="taxa" value="20" placeholder="Ex: 20" required min="0" max="100">
+
+            <label for="influenciadores">Total de Influenciadores:</label>
+            <input type="number" name="influenciadores" id="influenciadores" value="4" placeholder="Ex: 4" required min="1">
+
+            <label for="brindes">Caixas de Brindes Recebidas:</label>
+            <input type="number" name="brindes" id="brindes" value="25" placeholder="Ex: 25" required min="0">
+
+            <label for="nota">Nota de Desempenho (0 a 10):</label>
+            <input type="number" name="nota" id="nota" value="5" placeholder="Ex: 5" required min="0">
+
+            <input type="submit" value="Gerar Relatório">
+        </form>
+    </main>
+</body>
+
+</html>
