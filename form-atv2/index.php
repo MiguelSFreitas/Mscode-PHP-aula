@@ -22,8 +22,6 @@
             'Poer P30'
         ];
 
-        echo "<h2>" . NOME_EMPRESA . "</h2>";
-
         echo "A " . NOME_EMPRESA . " fornece: " . $equipamentos[0] . "<br>";
         echo "A " . NOME_EMPRESA . " fornece: " . $equipamentos[1] . "<br>";
         echo "A " . NOME_EMPRESA . " fornece: " . $equipamentos[2] . "<br>";
