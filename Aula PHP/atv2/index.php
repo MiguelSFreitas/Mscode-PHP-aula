@@ -9,7 +9,9 @@
     <?php
     $idadeDigitada= '20';
 
-    $idade = (int)
+    $idade = (int) $idadeDigitada;
+
+    
     ?>
 </body>
 </html>
