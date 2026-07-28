@@ -1,45 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analizador de Números</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-
-        <h1>Loops - FOREACH</h1> 
-        <br>
-
-        <h2>Seu carrinho de compras -  </h2>
-        <br>
+        <h1>Loops - FOREACH</h1>
+        <h2>A busca no catálogo - MSCODE</h2>
 
         <div>
             <?php
-                $carrinho = [
-                    "Notebook" => 4500.00,
-                    "Mouse redondo" => 120.00,
-                    "Teclado" => 350.00,
-                    "Monitor" => 900.00,
-                   
+                $catalogo = [
+                    "Eletronicos" => ['Mouse', 'Teclado', 'Monitor'],
+                    "Moveis" => ['Mesa', 'Cadeira', 'Sofa'],
+                    "Roupas" => ['Camiseta', 'Calça', 'Jaqueta'],
                 ];
 
-               $totalcompra = 0;
+                $produtoBuscado = 'Cadeira';
 
-               echo "<h3> Itens adicionados</h3>";
+                foreach ($catalogo as $categoria => $produtos) {
+                    
+                    echo "<h3>BUscando na categoria: $categoria</h3>";
 
-               echo "<ul>";
+                    foreach ($produtos as $protudos) {
+                        echo "Chegando item: $produtos <br>";
 
-               foreach ($carrinho as $produto => $preco) {
-                    echo "<li>O produto $produto custa R$ $preco</li>";
-                    $totalcompra = $totalcompra + $preco;
-                 }
-                 
-                 echo "<br><li><strong>Total a pagar: R$ $totalcompra</strong></li>";
+                        if ($produtos === $produtoBuscado) {
+                            echo "<p><strong> \u{1F3AF} Produto '$produtos' encontrado";
+
+                            return;
+
+                        }
+                    }
+                }
             ?>
-
         </div>
     </main>
+    
 </body>
 </html>
