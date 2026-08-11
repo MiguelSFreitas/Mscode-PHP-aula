@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analisador de Números</title>
+    <title>Painel de habilidades(skills)</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -34,7 +34,7 @@
 
                 $textoFormatado = implode(" | " , $listaSkills);
 
-                echo "Trilha do aluno: $textoFormatado";
+                echo "<br>Trilha do aluno: $textoFormatado";
                 
             ?>
         </div>
